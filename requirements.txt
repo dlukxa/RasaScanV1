@@ -1,8 +1,8 @@
-Flask
-Flask-CORS
-Pillow
-numpy
-tensorflow
-matplotlib
-rembg
+Flask==2.0.3
+Flask-CORS==3.0.10
+Pillow==9.0.1
+numpy==1.22.3
+matplotlib==3.5.1
+rembg==1.0.27
+tensorflow==2.8.0  # Adjusted version
 onnxruntime
