@@ -1,0 +1,411 @@
+[
+    {
+      "Food Name": "Alavade",
+      "Recipe": "A deep-fried snack made with lentils, spices, and curry leaves. Soak lentils, grind into a paste, mix with spices, shape into balls, and deep fry.",
+      "Ingredients": [
+        {"name": "Lentils", "quantity": "1 cup"},
+        {"name": "Curry leaves", "quantity": "5-6 leaves"},
+        {"name": "Green chili", "quantity": "2"},
+        {"name": "Salt", "quantity": "to taste"},
+        {"name": "Oil", "quantity": "for frying"}
+      ],
+      "Nutritional Information": {
+        "Calories": 300,
+        "Carbs": "25g",
+        "Protein": "10g",
+        "Fat": "15g"
+      },
+      "Cultural Context": "A popular snack during festivals and special occasions."
+    },
+    {
+      "Food Name": "Aluva",
+      "Recipe": "A sweet made from rice flour, coconut milk, and jaggery. Mix ingredients, cook until thickened, and cut into pieces.",
+      "Ingredients": [
+        {"name": "Rice flour", "quantity": "1 cup"},
+        {"name": "Coconut milk", "quantity": "1 cup"},
+        {"name": "Jaggery", "quantity": "1/2 cup"},
+        {"name": "Cardamom", "quantity": "1/2 tsp"}
+      ],
+      "Nutritional Information": {
+        "Calories": 200,
+        "Carbs": "35g",
+        "Protein": "2g",
+        "Fat": "5g"
+      },
+      "Cultural Context": "A traditional sweet often prepared for Sinhala and Tamil New Year."
+    },
+    {
+      "Food Name": "Bada Irugu",
+      "Recipe": "A spicy fried snack made with lentils, rice flour, and spices. Mix ingredients, shape into small rounds, and deep fry.",
+      "Ingredients": [
+        {"name": "Lentils", "quantity": "1 cup"},
+        {"name": "Rice flour", "quantity": "1/2 cup"},
+        {"name": "Chili powder", "quantity": "1 tsp"},
+        {"name": "Salt", "quantity": "to taste"},
+        {"name": "Oil", "quantity": "for frying"}
+      ],
+      "Nutritional Information": {
+        "Calories": 250,
+        "Carbs": "20g",
+        "Protein": "8g",
+        "Fat": "12g"
+      },
+      "Cultural Context": "A crunchy snack enjoyed during tea time."
+    },
+    {
+      "Food Name": "Cutlet",
+      "Recipe": "A fried snack made with potatoes, fish or meat, and spices. Boil potatoes, mix with cooked fish or meat, shape into patties, coat with breadcrumbs, and fry.",
+      "Ingredients": [
+        {"name": "Potatoes", "quantity": "2"},
+        {"name": "Fish/Meat", "quantity": "100g"},
+        {"name": "Breadcrumbs", "quantity": "1/2 cup"},
+        {"name": "Spices", "quantity": "to taste"},
+        {"name": "Oil", "quantity": "for frying"}
+      ],
+      "Nutritional Information": {
+        "Calories": 350,
+        "Carbs": "30g",
+        "Protein": "15g",
+        "Fat": "18g"
+      },
+      "Cultural Context": "A popular snack served at parties and gatherings."
+    },
+    {
+      "Food Name": "Haalpiti Aluwa",
+      "Recipe": "A sweet made from rice flour, sugar, and coconut. Mix ingredients, cook until thickened, and cut into diamond shapes.",
+      "Ingredients": [
+        {"name": "Rice flour", "quantity": "1 cup"},
+        {"name": "Sugar", "quantity": "1/2 cup"},
+        {"name": "Coconut", "quantity": "1/2 cup"},
+        {"name": "Cardamom", "quantity": "1/2 tsp"}
+      ],
+      "Nutritional Information": {
+        "Calories": 220,
+        "Carbs": "40g",
+        "Protein": "2g",
+        "Fat": "6g"
+      },
+      "Cultural Context": "A traditional sweet often made for festivals."
+    },
+    {
+      "Food Name": "Itli",
+      "Recipe": "A traditional South Indian and Sri Lankan breakfast dish made from fermented rice and lentil batter. Soak rice and urad dal separately, grind into a smooth batter, mix together, ferment overnight, and steam in idli molds until fluffy and cooked.",
+      "Ingredients": [
+        {"name": "Idli Rice (Short-Grain Rice)", "quantity": "2 cups"},
+        {"name": "Urad Dal (Black Gram Lentil)", "quantity": "1 cup"},
+        {"name": "Methi Seeds (Fenugreek Seeds)", "quantity": "1/2 tsp"},
+        {"name": "Salt", "quantity": "to taste"},
+        {"name": "Water", "quantity": "for grinding and fermenting"}
+      ],
+      "Optional Ingredients": [
+        {"name": "Vegetables (Carrots, Onions, Chilies)", "quantity": "as desired"},
+        {"name": "Cumin Seeds", "quantity": "1 tsp"},
+        {"name": "Asafoetida", "quantity": "a pinch"}
+      ],
+      "Nutritional Information": {
+        "Calories": 150,
+        "Carbs": "30g",
+        "Protein": "5g",
+        "Fat": "1g"
+      },
+      "Cultural Context": "A staple breakfast dish in South India and Sri Lanka, idli is known for its light, fluffy texture and mild flavor. It is often served with coconut chutney, sambar, or spicy lentil curry. Idli is a healthy and nutritious dish, made through fermentation, which enhances its digestibility and nutrient absorption."
+    },
+    {
+      "Food Name": "Kavum",
+      "Recipe": "A deep-fried sweet made from rice flour and treacle. Mix ingredients, shape into small rounds, and deep fry.",
+      "Ingredients": [
+        {"name": "Rice flour", "quantity": "1 cup"},
+        {"name": "Treacle", "quantity": "1/2 cup"},
+        {"name": "Coconut milk", "quantity": "1/4 cup"},
+        {"name": "Oil", "quantity": "for frying"}
+      ],
+      "Nutritional Information": {
+        "Calories": 280,
+        "Carbs": "45g",
+        "Protein": "2g",
+        "Fat": "10g"
+      },
+      "Cultural Context": "A traditional sweet prepared for Sinhala and Tamil New Year."
+    },
+    {
+      "Food Name": "Kiri Appa",
+      "Recipe": "A type of hopper made with rice flour and coconut milk. Mix batter, pour into a hopper pan, and cook until crispy.",
+      "Ingredients": [
+        {"name": "Rice flour", "quantity": "1 cup"},
+        {"name": "Coconut milk", "quantity": "1 cup"},
+        {"name": "Salt", "quantity": "to taste"}
+      ],
+      "Nutritional Information": {
+        "Calories": 180,
+        "Carbs": "25g",
+        "Protein": "3g",
+        "Fat": "7g"
+      },
+      "Cultural Context": "A popular breakfast or dinner item, often served with sambol or curry."
+    },
+    {
+      "Food Name": "Kiribath",
+      "Recipe": "Cook rice with coconut milk, shape into blocks, and serve with lunu miris.",
+      "Ingredients": [
+        {"name": "Rice", "quantity": "1 cup"},
+        {"name": "Coconut milk", "quantity": "1 cup"},
+        {"name": "Salt", "quantity": "to taste"}
+      ],
+      "Nutritional Information": {
+        "Calories": 250,
+        "Carbs": "40g",
+        "Protein": "5g",
+        "Fat": "8g"
+      },
+      "Cultural Context": "A traditional dish served during celebrations like Sinhala and Tamil New Year."
+    },
+    {
+      "Food Name": "Kithul Thalapa",
+      "Recipe": "A sweet made from kithul treacle and rice flour. Mix ingredients, shape into small rounds, and steam.",
+      "Ingredients": [
+        {"name": "Rice flour", "quantity": "1 cup"},
+        {"name": "Kithul treacle", "quantity": "1/2 cup"},
+        {"name": "Coconut", "quantity": "1/4 cup"}
+      ],
+      "Nutritional Information": {
+        "Calories": 200,
+        "Carbs": "35g",
+        "Protein": "2g",
+        "Fat": "5g"
+      },
+      "Cultural Context": "A traditional sweet often made for festivals."
+    },
+    {
+        "Food Name": "Konda Kewum",
+        "Recipe": "A deep-fried sweet made from rice flour and treacle. Mix ingredients, shape into small rounds, and deep fry.",
+        "Ingredients": [
+        {"name": "Rice flour", "quantity": "1 cup"},
+        {"name": "Treacle", "quantity": "1/2 cup"},
+        {"name": "Coconut milk", "quantity": "1/4 cup"},
+        {"name": "Oil", "quantity": "for frying"}
+        ],
+        "Nutritional Information": {
+        "Calories": 280,
+        "Carbs": "45g",
+        "Protein": "2g",
+        "Fat": "10g"
+        },
+        "Cultural Context": "A traditional sweet prepared for Sinhala and Tamil New Year."
+    },
+    {
+      "Food Name": "Levariya",
+      "Recipe": "A traditional Sri Lankan sweet made from rice flour dough filled with caramelized coconut. Prepare the dough by mixing rice flour, salt, and water, shape into string hoppers, fill with a mixture of shredded coconut, sugar syrup, cardamom, and salt, and steam until cooked.",
+      "Ingredients": [
+        {"name": "Rice Flour", "quantity": "2 cups"},
+        {"name": "Salt", "quantity": "1 tsp (for dough)"},
+        {"name": "Water", "quantity": "3 1/2 cups (for dough)"},
+        {"name": "Shredded Coconut", "quantity": "2 cups"},
+        {"name": "Dark Sugar Syrup", "quantity": "2 tbsp"},
+        {"name": "Cardamom Powder", "quantity": "1/2 tsp"},
+        {"name": "Salt", "quantity": "1/2 tsp (for filling)"},
+        {"name": "Sugar", "quantity": "1 cup"}
+      ],
+      "Nutritional Information": {
+        "Calories": 200,
+        "Carbs": "35g",
+        "Protein": "2g",
+        "Fat": "6g"
+      },
+      "Cultural Context": "A beloved Sri Lankan sweet, Lavariya is made from delicate string hoppers (Idiyappam) filled with caramelized coconut. It is often enjoyed as a breakfast delicacy or an afternoon snack, paired with a hot cup of tea and ripe bananas. Lavariya is a symbol of tradition and is commonly prepared during festivals and special occasions."
+    },
+    {
+        "Food Name": "Mun Kewum",
+        "Recipe": "A deep-fried sweet made from rice flour and treacle. Mix ingredients, shape into small rounds, and deep fry.",
+        "Ingredients": [
+        {"name": "Rice flour", "quantity": "1 cup"},
+        {"name": "Treacle", "quantity": "1/2 cup"},
+        {"name": "Coconut milk", "quantity": "1/4 cup"},
+        {"name": "Oil", "quantity": "for frying"}
+        ],
+        "Nutritional Information": {
+        "Calories": 280,
+        "Carbs": "45g",
+        "Protein": "2g",
+        "Fat": "10g"
+        },
+        "Cultural Context": "A traditional sweet prepared for Sinhala and Tamil New Year."
+    },
+    {
+      "Food Name": "Munguli",
+      "Recipe": "A traditional Sri Lankan sweet made from mung beans, rice flour, treacle, and spices. Soak and grind mung beans, mix with rice flour, treacle, and spices, shape into small rounds, and deep fry until golden brown.",
+      "Ingredients": [
+        {"name": "Mung Beans", "quantity": "1 cup (soaked and ground)"},
+        {"name": "Rice Flour", "quantity": "1/2 cup"},
+        {"name": "Treacle", "quantity": "1/2 cup"},
+        {"name": "Cardamom", "quantity": "1/2 tsp (powdered)"},
+        {"name": "Turmeric", "quantity": "1/4 tsp (for color)"},
+        {"name": "Oil", "quantity": "for frying"}
+      ],
+      "Other Possible Ingredients": [
+        {"name": "Sugar", "quantity": "2 tbsp (optional)"},
+        {"name": "Coconut Milk", "quantity": "1/4 cup (optional)"},
+        {"name": "Sesame Seeds", "quantity": "1 tbsp (optional)"},
+        {"name": "Salt", "quantity": "a pinch (optional)"},
+        {"name": "Water", "quantity": "as needed (optional)"},
+        {"name": "Plain Flour", "quantity": "2 tbsp (optional)"},
+        {"name": "Astra (Shortening)", "quantity": "1 tbsp (optional)"},
+        {"name": "Egg", "quantity": "1 (optional, for binding)"}
+      ],
+      "Optional Ingredients": [
+        {"name": "Sweet Cumin (Maaduru)", "quantity": "1/2 tsp (optional)"},
+        {"name": "MAGGI Coconut Milk Powder", "quantity": "1 tbsp (optional)"}
+      ],
+      "Nutritional Information": {
+        "Calories": 280,
+        "Carbs": "40g",
+        "Protein": "6g",
+        "Fat": "12g"
+      },
+      "Cultural Context": "A traditional Sri Lankan sweet often made during festivals and special occasions. Mung Kavum is known for its rich, nutty flavor from mung beans and the sweetness of treacle. It is a beloved treat, often enjoyed as a dessert or snack, and is especially popular during Sinhala and Tamil New Year celebrations."
+    },
+    {
+        "Food Name": "Panivalalu",
+        "Recipe": "A sweet made from rice flour, coconut, and jaggery, shaped into small rings. Mix ingredients, shape into rings, and deep fry.",
+        "Ingredients": [
+        {"name": "Rice flour", "quantity": "1 cup"},
+        {"name": "Coconut", "quantity": "1/2 cup"},
+        {"name": "Jaggery", "quantity": "1/2 cup"},
+        {"name": "Oil", "quantity": "for frying"}
+        ],
+        "Nutritional Information": {
+        "Calories": 250,
+        "Carbs": "40g",
+        "Protein": "2g",
+        "Fat": "8g"
+        },
+        "Cultural Context": "A traditional sweet often made for Sinhala and Tamil New Year."
+    },
+    {
+        "Food Name": "Pittu",
+        "Recipe": "A steamed dish made from rice flour and coconut. Mix ingredients, steam in a pittu mold, and serve with curry.",
+        "Ingredients": [
+        {"name": "Rice flour", "quantity": "1 cup"},
+        {"name": "Coconut", "quantity": "1/2 cup"},
+        {"name": "Salt", "quantity": "to taste"}
+        ],
+        "Nutritional Information": {
+        "Calories": 180,
+        "Carbs": "30g",
+        "Protein": "3g",
+        "Fat": "5g"
+        },
+        "Cultural Context": "A popular breakfast dish in Sri Lanka, often served with coconut milk and curry."
+    },
+    {
+        "Food Name": "Roll",
+        "Recipe": "A snack made with a thin flatbread filled with vegetables or meat. Prepare flatbread, add filling, roll, and fry.",
+        "Ingredients": [
+        {"name": "Flour", "quantity": "1 cup"},
+        {"name": "Vegetables/Meat", "quantity": "1 cup"},
+        {"name": "Spices", "quantity": "to taste"},
+        {"name": "Oil", "quantity": "for frying"}
+        ],
+        "Nutritional Information": {
+        "Calories": 300,
+        "Carbs": "35g",
+        "Protein": "10g",
+        "Fat": "12g"
+        },
+        "Cultural Context": "A popular street food in Sri Lanka."
+    },
+    {
+        "Food Name": "Roti",
+        "Recipe": "A flatbread made from flour, coconut, and water. Mix ingredients, roll into flat circles, and cook on a griddle.",
+        "Ingredients": [
+        {"name": "Flour", "quantity": "1 cup"},
+        {"name": "Coconut", "quantity": "1/4 cup"},
+        {"name": "Water", "quantity": "as needed"},
+        {"name": "Salt", "quantity": "to taste"}
+        ],
+        "Nutritional Information": {
+        "Calories": 200,
+        "Carbs": "30g",
+        "Protein": "5g",
+        "Fat": "6g"
+        },
+        "Cultural Context": "A staple food in Sri Lanka, often served with curries."
+    },
+    {
+        "Food Name": "Thala Aggala",
+        "Recipe": "A sweet made from sesame seeds, jaggery, and coconut. Mix ingredients, shape into small balls, and let cool.",
+        "Ingredients": [
+        {"name": "Sesame seeds", "quantity": "1 cup"},
+        {"name": "Jaggery", "quantity": "1/2 cup"},
+        {"name": "Coconut", "quantity": "1/4 cup"}
+        ],
+        "Nutritional Information": {
+        "Calories": 250,
+        "Carbs": "30g",
+        "Protein": "5g",
+        "Fat": "12g"
+        },
+        "Cultural Context": "A traditional sweet often made for festivals."
+    },
+    {
+      "Food Name": "Unduvade",
+      "Recipe": "A crispy, deep-fried snack made from urad dal (black lentils) and spices. Soak urad dal, grind into a smooth batter, mix with spices, shape into doughnut-like patties, and deep fry until golden brown.",
+      "Ingredients": [
+        {"name": "Urad Dal (Black Lentils)", "quantity": "1 cup"},
+        {"name": "Rice Flour", "quantity": "2 tbsp"},
+        {"name": "Green Chilies", "quantity": "2 (finely chopped)"},
+        {"name": "Ginger", "quantity": "1 tsp (finely grated)"},
+        {"name": "Curry Leaves", "quantity": "5-6 leaves (finely chopped)"},
+        {"name": "Onion", "quantity": "1 small (finely chopped)"},
+        {"name": "Cumin Seeds", "quantity": "1 tsp"},
+        {"name": "Black Pepper", "quantity": "1/2 tsp (crushed)"},
+        {"name": "Salt", "quantity": "to taste"},
+        {"name": "Baking Soda", "quantity": "1/4 tsp"},
+        {"name": "Oil", "quantity": "for frying"}
+      ],
+      "Nutritional Information": {
+        "Calories": 220,
+        "Carbs": "20g",
+        "Protein": "10g",
+        "Fat": "10g"
+      },
+      "Cultural Context": "A popular Sri Lankan and South Indian snack, often enjoyed as a tea-time treat or breakfast item. Ullundu Wade is known for its crispy exterior and soft, fluffy interior. It is commonly served with coconut chutney or sambar and is a staple at festivals and special occasions."
+    },
+    {
+      "Food Name": "Valithalapa",
+      "Recipe": "A traditional Sri Lankan sweet made from white raw rice flour, sugar, desiccated coconut, thick coconut milk, and cardamom. Mix ingredients into a dough, shape into small rounds or cylinders, and steam until cooked.",
+      "Ingredients": [
+        {"name": "White Raw Rice Flour", "quantity": "500g"},
+        {"name": "Sugar", "quantity": "450g"},
+        {"name": "Desiccated Coconut", "quantity": "180g"},
+        {"name": "Thick Coconut Milk", "quantity": "1 cup"},
+        {"name": "Ground Cardamom", "quantity": "1 tsp (or to taste)"},
+        {"name": "Salt", "quantity": "2 tsp"}
+      ],
+      "Nutritional Information": {
+        "Calories": 300,
+        "Carbs": "50g",
+        "Protein": "3g",
+        "Fat": "10g"
+      },
+      "Cultural Context": "A traditional Sri Lankan sweet often made during festivals and special occasions. Welithalapa is known for its soft, melt-in-the-mouth texture and the rich flavor of coconut and cardamom. It is a popular treat during Sinhala and Tamil New Year celebrations, symbolizing sweetness and prosperity."
+    },
+    {
+      "Food Name": "Wandu",
+      "Recipe": "A sweet, deep-fried cake made from rice flour, coconut, and treacle. Mix ingredients into a batter, pour into a special mold, and deep fry until golden brown.",
+      "Ingredients": [
+        {"name": "Rice flour", "quantity": "1 cup"},
+        {"name": "Coconut", "quantity": "1/2 cup (grated)"},
+        {"name": "Kithul treacle", "quantity": "1/2 cup"},
+        {"name": "Cardamom", "quantity": "1/2 tsp"},
+        {"name": "Salt", "quantity": "a pinch"},
+        {"name": "Oil", "quantity": "for frying"}
+      ],
+      "Nutritional Information": {
+        "Calories": 250,
+        "Carbs": "40g",
+        "Protein": "2g",
+        "Fat": "10g"
+      },
+      "Cultural Context": "A traditional Sri Lankan sweet often prepared during festivals and special occasions. It is especially popular during Sinhala and Tamil New Year celebrations. The name 'Wandu Appa' comes from the unique mold used to shape the cake, which gives it a distinctive round or flower-like appearance."
+    }
+    ]

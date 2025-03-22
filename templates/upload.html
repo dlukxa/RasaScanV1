@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Classification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f5f2e9 url('static/background.png') no-repeat center/cover;
+            color: #4a3c31;
+            font-family: 'Noto Serif Sinhala', serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .upload-container {
+            background: #fffcf5;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #8b5e34;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid #e8d5a4;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .upload-area {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            border: 2px dashed #c9b68b;
+            border-radius: 10px;
+            background: #faf8f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .upload-area:hover {
+            background: #f0ece2;
+            border-color: #8b5e34;
+        }
+
+        input[type="file"] {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .upload-icon {
+            color: #8b5e34;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .upload-text {
+            color: #4a3c31;
+            font-size: 1rem;
+        }
+
+        .image-preview {
+            display: none;
+            width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+
+        .analysis-result {
+            display: none;
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #faf8f0;
+            border-radius: 10px;
+            color: #4a3c31;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        .predict-btn {
+            background: #8b5e34;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            align-self: center;
+        }
+
+        .predict-btn:hover {
+            background: #c9b68b;
+            transform: scale(1.1);
+        }
+
+        .predict-icon {
+            color: #fffcf5;
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 480px) {
+            .upload-container {
+                padding: 1.5rem;
+            }
+
+            .upload-area {
+                height: 120px;
+            }
+
+            .upload-icon {
+                font-size: 2rem;
+            }
+
+            .predict-btn {
+                width: 50px;
+                height: 50px;
+            }
+
+            .predict-icon {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <h1>Upload an Image for Food Classification</h1>
+        <form id="upload-form">
+            <div class="upload-area" id="upload-area">
+                <input type="file" name="file" accept="image/*" id="file-input">
+                <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                <span class="upload-text">Click to Upload Image</span>
+            </div>
+            <img id="image-preview" class="image-preview" alt="Image Preview">
+            <div id="analysis-result" class="analysis-result">
+                <strong>Prediction:</strong> <span id="predicted-class"></span><br>
+                <strong>Confidence:</strong> <span id="confidence"></span><br>
+                <strong>Description:</strong> <span id="description"></span>
+            </div>
+            <button type="submit" class="predict-btn" id="predict-btn">
+                <i class="fas fa-magic predict-icon"></i>
+            </button>
+        </form>
+    </div>
+
+    <script>
+        const uploadArea = document.getElementById('upload-area');
+        const fileInput = document.getElementById('file-input');
+        const imagePreview = document.getElementById('image-preview');
+        const analysisResult = document.getElementById('analysis-result');
+        const predictedClass = document.getElementById('predicted-class');
+        const confidence = document.getElementById('confidence');
+        const description = document.getElementById('description');
+        const uploadIcon = uploadArea.querySelector('.upload-icon');
+        const uploadText = uploadArea.querySelector('.upload-text');
+        const form = document.getElementById('upload-form');
+
+        fileInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    imagePreview.src = e.target.result;
+                    imagePreview.style.display = 'block';
+                    uploadIcon.style.display = 'none';
+                    uploadText.style.display = 'none';
+                    uploadArea.style.border = 'none';
+                    uploadArea.style.background = 'transparent';
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            if (fileInput.files.length === 0) {
+                alert('Please select an image first');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+
+            try {
+                const response = await fetch('http://localhost:5000/', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error('Server error');
+                }
+
+                const result = await response.text();
+                // Since Flask returns rendered HTML, we'll need to parse it or modify Flask to return JSON
+                // For now, assuming Flask is modified to return JSON (see note below)
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(result, 'text/html');
+                
+                // Extract data from the rendered result.html (this is a workaround)
+                // Ideally, modify Flask to return JSON instead
+                const predicted = doc.querySelector('body').innerText.match(/Predicted: (.+?) \(/)[1];
+                const conf = doc.querySelector('body').innerText.match(/\((\d+\.\d+)%\)/)[1];
+                const desc = doc.querySelector('body').innerText.match(/Description: (.+?)(?=\n|$)/)?.[1] || 'No description available';
+
+                // Update UI with results
+                predictedClass.textContent = predicted;
+                confidence.textContent = `${conf}%`;
+                description.textContent = desc;
+                imagePreview.src = '/static/predicted_image.png?' + new Date().getTime(); // Avoid cache
+                analysisResult.style.display = 'block';
+
+            } catch (error) {
+                console.error('Error:', error);
+                analysisResult.style.display = 'block';
+                predictedClass.textContent = 'Error';
+                confidence.textContent = '';
+                description.textContent = 'Failed to process image';
+            }
+        });
+
+        uploadArea.addEventListener('click', function() {
+            if (!fileInput.files.length) {
+                fileInput.value = '';
+            }
+        });
+    </script>
+</body>
+</html>

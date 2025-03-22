@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>Predicted Class: {{ predicted_class }}</p>
+    <p>Confidence: {{ confidence }}%</p>
+    <img src="{{ url_for('static', filename=image_path) }}" alt="Predicted Image">
+    <br><br>
+    <a href="{{ url_for('upload_file') }}">Upload Another Image</a>
+</body>
+</html>
