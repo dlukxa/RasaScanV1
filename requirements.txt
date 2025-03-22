@@ -1,8 +1,7 @@
 Flask==2.0.3
 Flask-CORS==3.0.10
-Pillow==9.0.1
+Pillow==8.4.0  # Older version that might have better support
 numpy==1.22.3
+tensorflow==2.8.0  # Ensure this version is compatible with Python 3.10
 matplotlib==3.5.1
 rembg==1.0.27
-tensorflow==2.8.0  # Adjusted version
-onnxruntime
